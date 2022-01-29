@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Dal Font';
+    src: url('https://ssl.pstatic.net/static/clova/service/clova_ai/event/handwriting/download/나눔손글씨 달의궤도.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body, html {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    height: 100%;
+    background: #000000;
+}
+canvas {
+    /*margin-bottom: -4px;*/
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+iframe {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    margin-left: -76px;
+}
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Dal Font';
+    color: white;
+    font-size: 5vh;
+}
+#toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    padding: 15px 20px;
+    transform: translate(-50%, 10px);
+    border-radius: 30px;
+    overflow: hidden;
+    font-size: .8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s, transform .5s;
+    background: rgba(0, 0, 0, .35);
+    color: #fff;
+    z-index: 10000;
+}
+
+#toast.reveal {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0)
+}
