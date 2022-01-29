@@ -301,7 +301,7 @@ function goShare() {
     } else {
         countText = counter.text;
     }
-    window.open("https://twitter.com/share?url=https://address.com&text=[BREAKING] " + countText +  "点です");
+    window.open("https://twitter.com/share?url=kona-jump.netlify.app&text=[BREAKING] " + countText +  "点です");
 }
 
 function tick(event) {
